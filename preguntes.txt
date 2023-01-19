@@ -1,0 +1,24 @@
+a)  Per què l’esquema de backtracking és aplicable per a resoldre aquest enunciat? Perquè és un problema d'optimització en el que es busca la millor solució possible. La solució la podem expressar com una seqüència de decisions.
+
+    Determina quines decisions ha de prendre el backtracking.
+    
+    Indica molt clarament quina pregunta ets fas en cada nivell de l’arbre i contesta les següents preguntes tenint en compte
+    la teva resposta que m’acabes de donar. Quan serà acceptable una decisió? Una decisió serà acceptable quan la diferència de costos sigui més petita que la diferència de costos solució.
+
+
+b)  Quin és el criteri per determinar si un conjunt de decisions és o no completable? Una decisió serà completable quan la diferència de costos sigui més petita que la diferència de costos solució.
+
+    Quin és el criteri per determinar si un conjunt de decisions és o no solució? Si la diferència de costos és més petita que la solució.
+    Dibuixa l’espai de cerca del problema, és a dir, l’arbre que generarà el backtracking, especificant quina serà l’alçada
+    i l’amplada, indicant si són valors exactes o valors màxims. Amb el teu plantejament cal usar la tècnica del marcatge? 
+    
+    L'alçada de l'arbre serà el nombre de menús x3, que correspon al nombre de plats totals que utilitzarem.
+    L'amplada de l'arbre serà la taula de plats possibles i utilitzant marcatge sabrem si ja hem posat aquest plat al menú o no.
+
+
+c)  Referent a la solució, indica quin/s magatzem/s usaràs per emmagatzemar la solució i què
+    hi emmagatzemaràs? Usarem un magatzem per guardar la solució i un per guardar la millor solució. (En la pràctica s'usa una classe privada, suposo que també es pot usar una taula de vectors)
+    Indica els atributs que s’han d’afegir a la classe Menus per a fer la
+    implementació que has descrit en l’apartat anterior, l’objectiu és que el mètode que
+    implementa el backtracking tingui el menor número possible de paràmetres. Per cada
+    atribut afegit indica el seu ús.
