@@ -1,3 +1,5 @@
+import java.rmi.server.RemoteRef;
+
 import Keyboard.*;
 public class Menus {
     private Plat[] plats;
@@ -65,10 +67,50 @@ public class Menus {
 
             System.out.print(men);
         }
-    public ??? trobaMillor(???) {
+    public void trobaMillor(int nivell) {
         // Decideix què retorna el mètode i els paràmetres
         // Completa - Exercici 4
+        for(int i = 0; i < numMenus; i++){
+            if(marcatge[i] > 0 && )
+        }
+
     }
+
+    public boolean acceptable(Plat currentP, Plats3 combi){
+        if(combi.primer == null){
+            if(currentP.getTipus() == Plat.PRIMER){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+        if(combi.segon == null){
+            if(currentP.getTipus() == Plat.SEGON){
+                if(currentP.isCarn() && combi.primer.isCarn() || currentP.isPeix() && combi.primer.isPeix()){
+                    return false;
+                }else{
+                    return true;
+                }
+
+
+            }else{
+                return false;
+            }
+        }
+
+        if(combi.postres == null){
+            if(currentP.getTipus() == Plat.POSTRES){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        
+        return false;
+    }
+
+
     public String toString() {
         String str = "";
         for(int i = 0; i < this.best.length; i++){
